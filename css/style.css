@@ -1,9 +1,9 @@
 :root {
     --color1: #232323;
-    --color2: #464B38;
-    --color3: #BCA97A;
-    --color4: #CBD590;
-    --color5: #C19482;
+    --color2: #464b38;
+    --color3: #bca97a;
+    --color4: #cbd590;
+    --color5: #c19482;
 }
 
 html {
@@ -29,11 +29,14 @@ body {
 header {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
+
+    position: sticky;
+    top: 0;
+
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    position: sticky;
-    top: 0;
+    align-items: center;
 }
 
 header nav ul {
@@ -41,7 +44,6 @@ header nav ul {
 
     display: flex;
     flex-direction: row;
-    justify-content: center;
 }
 
 header nav ul a {
@@ -58,6 +60,10 @@ header nav ul li {
 
 header nav ul li:hover {
     background: var(--color2);
+}
+
+header h1 {
+    text-transform: uppercase;
 }
 
 main {
