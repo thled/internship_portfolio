@@ -1,3 +1,11 @@
+:root {
+    --color1: #232323;
+    --color2: #464B38;
+    --color3: #BCA97A;
+    --color4: #CBD590;
+    --color5: #C19482;
+}
+
 html {
     margin: 0;
     padding: 0;
@@ -7,9 +15,10 @@ html {
 body {
     margin: 0;
     padding: 0;
-    background-color: black;
-    color: white;
     font-size: 2rem;
+
+    background-color: var(--color1);
+    color: var(--color3);
 
     display: grid;
     grid-template-columns: 1fr;
@@ -30,6 +39,10 @@ header {
 main {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+}
+
+article {
+    color: var(--color4);
 }
 
 footer {
