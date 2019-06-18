@@ -23,6 +23,8 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    position: sticky;
+    top: 0;
 }
 
 main {
