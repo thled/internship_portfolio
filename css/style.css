@@ -79,24 +79,51 @@ main {
 
 main article {
     color: var(--color4);
+}
 
+main article.introduction {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-main article div {
+main article.introduction div {
     margin: 2rem;
 }
 
-main article .avatar img {
+main article.introduction .avatar img {
     border-style: solid;
     border-width: 0.5rem;
     border-color: var(--color2);
 }
 
-main article .description {
+main article.introduction .description {
     max-width: 70rem;
+}
+
+main article.cv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main article.cv table {
+    margin: 4rem 0;
+}
+
+main article.cv table caption {
+    margin: 1rem 0;
+    font-weight: bold;
+    color: var(--color5);
+}
+
+main article.cv table th {
+    text-align: right;
+}
+
+main article.cv table td {
+    text-align: left;
+    padding-left: 2rem;
 }
 
 footer {
