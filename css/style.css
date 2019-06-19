@@ -64,6 +64,8 @@ header nav ul li {
     border-style: solid;
     border-width: 0.2rem;
     border-color: var(--color2);
+
+    font-weight: bold;
 }
 
 header h1 {
