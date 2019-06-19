@@ -26,6 +26,10 @@ body {
     min-height: 100vh;
 }
 
+body a {
+    color: var(--color4);
+}
+
 header {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
@@ -79,8 +83,18 @@ main article {
     justify-content: center;
 }
 
+main article div {
+    margin: 2rem;
+}
+
+main article .avatar img {
+    border-style: solid;
+    border-width: 0.5rem;
+    border-color: var(--color2);
+}
+
 main article .description {
-    max-width: 675px;
+    max-width: 70rem;
 }
 
 footer {
