@@ -1,4 +1,5 @@
-document.getElementById('my-age').innerHTML = calculateAge(new Date(1989, 6, 6));
+const myAgeElement = document.getElementById('my-age');
+myAgeElement && (myAgeElement.innerHTML = calculateAge(new Date(1989, 6, 6)));
 
 function calculateAge(birthDate) {
     const currentDate = new Date();

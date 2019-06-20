@@ -81,61 +81,61 @@ main article {
     color: var(--color4);
 }
 
-main article.introduction {
+main article#introduction {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-main article.introduction div {
+main article#introduction div {
     margin: 2rem;
 }
 
-main article.introduction .avatar img {
+main article#introduction .avatar img {
     border-style: solid;
     border-width: 0.5rem;
     border-color: var(--color2);
 }
 
-main article.introduction .description {
+main article#introduction .description {
     max-width: 70rem;
 }
 
-main article.cv {
+main article#cv {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-main article.cv table {
+main article#cv table {
     margin: 4rem 0;
 }
 
-main article.cv table caption {
+main article#cv table caption {
     margin: 1rem 0;
     font-weight: bold;
     color: var(--color5);
 }
 
-main article.cv table th {
+main article#cv table th {
     text-align: right;
 }
 
-main article.cv table td {
+main article#cv table td {
     text-align: left;
     padding-left: 2rem;
 }
 
-main article.contact {
+main article#contact {
     display: flex;
     justify-content: center;
 }
 
-main article.contact fieldset {
+main article#contact fieldset {
     width: 30rem;
 }
 
-main article.contact fieldset div {
+main article#contact fieldset div {
     margin: 1rem 0;
 
     display: flex;
@@ -143,8 +143,14 @@ main article.contact fieldset div {
     justify-content: space-between;
 }
 
-main article.contact fieldset div#message {
+main article#contact fieldset div#message {
     flex-direction: column;
+}
+
+main article#projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 footer {
