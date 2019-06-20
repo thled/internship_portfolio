@@ -4,6 +4,7 @@
     --color3: #bca97a;
     --color4: #cbd590;
     --color5: #c19482;
+    --color1-transparent: hsla(0, 0%, 14%, 0.9);
 }
 
 html {
@@ -36,6 +37,7 @@ header {
 
     position: sticky;
     top: 0;
+    background-color: var(--color1-transparent);
 
     display: flex;
     flex-direction: column;
