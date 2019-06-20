@@ -1,7 +1,16 @@
 document.getElementById('my-age').innerHTML = calculateAge(new Date(1989, 6, 6));
 
-function calculateAge(birthday) {
-    let ageDiff = Date.now() - birthday.getTime();
-    let ageDate = new Date(ageDiff);
-    return Math.abs(ageDate.getUTCFullYear() - 1970);
+function calculateAge(birthDate) {
+    const currentDate = new Date();
+
+    const currentYear = currentDate.getFullYear();
+    const birthYear = birthDate.getFullYear();
+
+    const yearDifference = currentYear - birthYear;
+
+    if (currentDate - currentYear < birthDate - birthYear) {
+        return yearDifference - 1;
+    }
+
+    return yearDifference;
 }
