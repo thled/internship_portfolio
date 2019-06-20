@@ -25,12 +25,14 @@
         </header>
         <main>
             <article id="contact">
-                <form id="contact">
+                <form id="contact" method="POST" action="contact_page.php">
                     <fieldset>
-                        <div>Vorname:<input type="text" /></div>
-                        <div>Nachname:<input type="text" /></div>
-                        <div>E-Mail:<input type="email" /></div>
-                        <div id="message">Nachricht:<textarea rows="5"></textarea></div>
+                        <div>Vorname:<input type="text" name="forename" /></div>
+                        <div>Nachname:<input type="text" name="surname" /></div>
+                        <div>E-Mail:<input type="email" name="mail" /></div>
+                        <div id="message">
+                            Nachricht:<textarea name="message" rows="5"></textarea>
+                        </div>
                         <div>
                             <input type="submit" value="Abschicken" />
                             <input type="reset" value="Zurücksetzen" />

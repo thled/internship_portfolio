@@ -129,27 +129,6 @@ main article#cv table td {
     padding-left: 2rem;
 }
 
-main article#contact {
-    display: flex;
-    justify-content: center;
-}
-
-main article#contact fieldset {
-    width: 30rem;
-}
-
-main article#contact fieldset div {
-    margin: 1rem 0;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-main article#contact fieldset div#message {
-    flex-direction: column;
-}
-
 main article#projects {
     display: flex;
     flex-direction: row;
@@ -171,8 +150,35 @@ main article#projects div.project {
     align-items: center;
 }
 
+main article#projects div.project a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 main article#projects div.project p.project-description {
     text-align: justify;
+}
+
+main article#contact {
+    display: flex;
+    justify-content: center;
+}
+
+main article#contact fieldset {
+    width: 30rem;
+}
+
+main article#contact fieldset div {
+    margin: 1rem 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+main article#contact fieldset div#message {
+    flex-direction: column;
 }
 
 footer {
