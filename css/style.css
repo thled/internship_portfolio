@@ -14,7 +14,7 @@ html {
 
 body {
     margin: 0;
-    padding: 0;
+    padding: 0 2rem;
     font-size: 2rem;
 
     background-color: var(--color1);
@@ -24,6 +24,10 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: 20rem 1fr 6rem;
     min-height: 100vh;
+}
+
+body a {
+    color: var(--color4);
 }
 
 header {
@@ -60,6 +64,8 @@ header nav ul li {
     border-style: solid;
     border-width: 0.2rem;
     border-color: var(--color2);
+
+    font-weight: bold;
 }
 
 header h1 {
@@ -71,8 +77,74 @@ main {
     grid-row: 2 / 3;
 }
 
-article {
+main article {
     color: var(--color4);
+}
+
+main article.introduction {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+main article.introduction div {
+    margin: 2rem;
+}
+
+main article.introduction .avatar img {
+    border-style: solid;
+    border-width: 0.5rem;
+    border-color: var(--color2);
+}
+
+main article.introduction .description {
+    max-width: 70rem;
+}
+
+main article.cv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main article.cv table {
+    margin: 4rem 0;
+}
+
+main article.cv table caption {
+    margin: 1rem 0;
+    font-weight: bold;
+    color: var(--color5);
+}
+
+main article.cv table th {
+    text-align: right;
+}
+
+main article.cv table td {
+    text-align: left;
+    padding-left: 2rem;
+}
+
+main article.contact {
+    display: flex;
+    justify-content: center;
+}
+
+main article.contact fieldset {
+    width: 30rem;
+}
+
+main article.contact fieldset div {
+    margin: 1rem 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+main article.contact fieldset div#message {
+    flex-direction: column;
 }
 
 footer {
@@ -82,6 +154,10 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    border-top-style: solid;
+    border-top-width: 0.3rem;
+    border-color: var(--color2);
 }
 
 footer ul {

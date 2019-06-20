@@ -7,6 +7,8 @@
 
         <link rel="stylesheet" href="css/style.css" />
 
+        <script src="https://kit.fontawesome.com/d3cc5276d7.js"></script>
+
         <title>Thomas' Portfolio</title>
     </head>
     <body>
@@ -22,13 +24,32 @@
             <h1>Kontaktformular</h1>
         </header>
         <main>
-            <article>todo: content</article>
+            <article class="contact">
+                <form id="contact">
+                    <fieldset>
+                        <div>Vorname:<input type="text" /></div>
+                        <div>Nachname:<input type="text" /></div>
+                        <div>E-Mail:<input type="email" /></div>
+                        <div id="message">Nachricht:<textarea rows="5"></textarea></div>
+                        <div>
+                            <input type="submit" value="Abschicken" />
+                            <input type="reset" value="Zurücksetzen" />
+                        </div>
+                    </fieldset>
+                </form>
+            </article>
         </main>
         <footer>
             <ul id="socialmedia">
-                <li><a href="#">Github</a></li>
-                <li><a href="#">Xing</a></li>
-                <li><a href="#">Facebook</a></li>
+                <li>
+                    <a href="#"><i class="fab fa-github"></i> Github</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-xing"></i> Xing</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                </li>
             </ul>
             <ul id="disclaimer">
                 <li><a href="#">Datenschutz</a></li>
